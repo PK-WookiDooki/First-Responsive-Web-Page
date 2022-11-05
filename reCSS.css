@@ -1,0 +1,449 @@
+.fulltemplate{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    position: absolute;
+    align-items: center;
+    margin-left: 0%;
+}
+
+.infobox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.header{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(197, 197, 197, 0.5);
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+/* Navagation Box Style*/
+.nav{
+    width: 100%;
+    height:fit-content ;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    padding-bottom: 5px;
+    margin-top: -10px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav li{
+    display: inline-block;
+    padding: 10px;
+}
+.nav li:nth-child(2), li:nth-child(3), li:nth-child(4){
+    float: right;
+    margin-right: 10px;
+}
+.nav li:first-child{
+    float: left;
+    margin-left: -15px;
+}
+.nav a{
+    color: black;
+    font-size: large;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: -15px;
+}
+.nav a:hover{
+    background-color: rgb(201, 201, 201);
+    transition: 300ms;
+}
+
+
+
+/* Wallpaper Box Style*/
+.wallpaper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: burlywood;
+    justify-content: center;
+    position: relative;
+}
+.wallpaper img{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.wallpaper .whead{
+    letter-spacing: 5px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    color: aliceblue;
+}
+.wallpaper .whead .br{
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px;
+    font-weight: bolder;
+}
+.wallpaper .whead .arc{
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Projects Box Style */
+.pjbox{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    width: 100%;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project div{
+    width: 24%;
+    height: fit-content;
+    margin-bottom: 15px;
+    position: relative;
+}
+.project div:first-child, div:nth-child(5){
+    margin-left: 0;
+}
+.project div:nth-child(4), div:last-child{
+    margin-right: 0;
+}
+.project div img{
+    width: 100%;
+    height: auto;
+}
+.project h3{
+    display: inline-block;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    font-size: medium;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* About Box Style */
+.about{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.about .perbox{
+    display: flex;
+    flex-direction: row;
+}
+.perbox div{
+    width: 25%;
+    margin: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.perbox div:first-child{
+    margin-left: 0;
+}
+.perbox div:last-child{
+    margin-right: 0;
+}
+.perbox img{
+    width: 100%;
+    height: auto;
+}
+.perbox h3{
+    font-weight: normal;
+}
+.perbox h4{
+    display: inline;
+    font-weight: lighter;
+    color: rgb(0, 0, 0, 0.5);
+}
+.perbox button{
+    height: 2pc;
+    border: none;
+}
+.perbox button:hover{
+    background-color: rgb(201, 201, 201);
+    transition: 350ms;
+}
+.perbox a{
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+/* Contact Box Style */
+.contact{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.contact .inputbox{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.inputbox div{
+    margin: 15px 0px 0px 0px;
+}
+.inputbox div input{
+    width: 100%;
+    height: 2.5pc;
+    font-size: medium;
+    border: 1px solid rgb(184, 184, 184);
+    padding-left: 5px;
+    letter-spacing: 2px;
+}
+.inputbox button{
+    height: 2.5pc;
+    font-size: medium;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.inputbox button:hover{
+    background-color: gainsboro;
+    color: black;
+    transition: 300ms;
+}
+
+/* Map Box Style */
+.map{
+    width: 90%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.map img{
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Box Style */
+.footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 2cm;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .copy, a{
+    font-size: large;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {  
+    .nav li:nth-child(2), li:nth-child(3), li:nth-child(4){
+        display: none;
+    }
+
+    .wallpaper .whead .arc{
+        display: none;
+    }
+    .wallpaper img{
+        width: 100%;
+        height: auto;
+    }
+
+    .pjbox .project{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .project div, img{
+        width: 100%;
+        height: auto;
+    }
+
+    .perbox{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .perbox div{
+        width: 100%;
+        height: auto;
+    }
+
+    .nav li:first-child:active{
+        transition: 0ms;
+        background-color: unset;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .project div{
+        width: 49%;
+        height: auto;
+        margin: 0 1% 2% 1%;
+    }
+    .project div:nth-child(odd){
+        margin-left: 0%;
+    }
+    .project div:nth-child(even){
+        margin-right: 0%;
+    }
+
+    .perbox{
+        flex-wrap: wrap;
+    }
+    .perbox div{
+        width: 49%;
+        height: inherit;
+        margin: 0 1% 2% 1%;
+    }
+    .perbox div:nth-child(odd){
+        margin-left: 0%;
+    }
+    .perbox div:nth-child(even){
+        margin-right: 0%;
+    }
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    
+    .project div{
+        width: 49%;
+        height: auto;
+        margin: 0 1% 2% 1%;
+    }
+    .project div:nth-child(odd){
+        margin-left: 0%;
+    }
+    .project div:nth-child(even){
+        margin-right: 0%;
+    }
+
+    .perbox{
+        flex-wrap: wrap;
+    }
+    .perbox div{
+        width: 49%;
+        height: inherit;
+        margin: 0 1% 2% 1%;
+    }
+    .perbox div:nth-child(odd){
+        margin-left: 0%;
+    }
+    .perbox div:nth-child(even){
+        margin-right: 0%;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    .project div{
+        width: 49%;
+        height: fit-content;
+        margin: 0 1% 2% 1%;
+    }
+    .project div:nth-child(odd){
+        margin-left: 0%;
+    }
+    .project div:nth-child(even){
+        margin-right: 0%;
+    }
+
+    .perbox{
+        flex-wrap: wrap;
+    }
+    .perbox div{
+        width: 49%;
+        height: inherit;
+        margin: 0 1% 2% 1%;
+    }
+    .perbox div:nth-child(odd){
+        margin-left: 0%;
+    }
+    .perbox div:nth-child(even){
+        margin-right: 0%;
+    }
+    
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .project div{
+        width: 24%;
+        height: fit-content;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .project div:first-child,.project div:nth-child(5){
+        margin-left: 0;
+    }
+    .project div:nth-child(4),.project div:last-child{
+        margin-right: 0;
+    }
+    .project div:nth-child(2),.project div:nth-child(6){
+        margin-right: 17px;
+    }
+    .project div:nth-child(3),.project div:nth-child(7){
+        margin-right: 8px;
+    }
+
+    .perbox{
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+    .perbox div:first-child{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    .perbox div:nth-child(2){
+        margin-left: -5px;
+        margin-right: 5px;
+    }
+    .perbox div:nth-child(3){
+        margin-left: 10px;
+        margin-right: -5px;
+    }
+    .perbox div:last-child{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+  }
